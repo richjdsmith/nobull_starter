@@ -18,14 +18,17 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Devise for user management Read more: https://github.com/plataformatec/devise
+# Devise for user management - Read more: https://github.com/plataformatec/devise
 gem 'devise'
 
-# Authorization - Pundit Read more: https://github.com/varvet/pundit
+# Authorization - Pundit - Read more: https://github.com/varvet/pundit
 gem 'pundit'
 
 # FriendlyID - sluggin - Read more: https://github.com/norman/friendly_id
 gem 'friendly_id', '~> 5.2.0'
+
+# Administrate - admin dashboard - Read more: https://github.com/thoughtbot/administrate
+gem "administrate"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
