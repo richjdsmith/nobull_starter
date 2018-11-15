@@ -24,6 +24,9 @@ gem 'devise'
 # Authorization - Pundit Read more: https://github.com/varvet/pundit
 gem 'pundit'
 
+# FriendlyID - sluggin - Read more: https://github.com/norman/friendly_id
+gem 'friendly_id', '~> 5.2.0'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
