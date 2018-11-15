@@ -21,6 +21,9 @@ gem 'jbuilder', '~> 2.5'
 # Devise for user management Read more: https://github.com/plataformatec/devise
 gem 'devise'
 
+# Authorization - Pundit Read more: https://github.com/varvet/pundit
+gem 'pundit'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
