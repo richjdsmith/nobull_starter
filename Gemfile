@@ -40,6 +40,9 @@ gem 'whenever', require: false
 gem 'phony', '~> 2.4', '>= 2.4.2'
 gem 'phony_rails'
 
+# Display times and dates to users in their local time - Read more: https://github.com/basecamp/local_time
+gem 'local_time'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

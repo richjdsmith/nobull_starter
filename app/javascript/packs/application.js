@@ -32,6 +32,10 @@ const application = Application.start()
 const context = require.context("controllers", true, /\.js(\.erb)?$/)
 application.load(definitionsFromContext(context))
 
+// Local Time Gem Requirement (https://github.com/basecamp/local_time)
+import LocalTime from "local-time"
+LocalTime.start()
+
 // Import our project's application stylesheet, which happens to contain our Tailwind stuff.
 import "../stylesheets/application.scss"
 
