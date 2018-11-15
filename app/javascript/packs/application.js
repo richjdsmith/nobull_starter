@@ -34,3 +34,7 @@ application.load(definitionsFromContext(context))
 
 // Import our project's application stylesheet, which happens to contain our Tailwind stuff.
 import "../stylesheets/application.scss"
+
+require.context('../images/', true, /\.(gif|jpg|png|svg)$/i)
+// Now within the views, you can call images using
+// <%= image_tag(asset_pack_path('images/abc.svg')) %>
