@@ -33,6 +33,9 @@ gem "administrate"
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
 
+# Adds chron jobs - Read more: https://github.com/javan/whenever
+gem 'whenever', require: false
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
