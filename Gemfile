@@ -43,6 +43,9 @@ gem 'phony_rails'
 # Display times and dates to users in their local time - Read more: https://github.com/basecamp/local_time
 gem 'local_time'
 
+# An easier way to handle names. - Read more: https://github.com/basecamp/name_of_person
+gem 'name_of_person'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
