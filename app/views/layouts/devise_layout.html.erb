@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Good Vine</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body class="devise_layout <%= controller_name %> <%= action_name %> static">
+    <header>
+      <%= render 'layouts/navigation/devise_header' %>
+    </header>
+    <main class="h-screen flex">
+      <section id="devise-side-image" class="md:visible md:flex-1 ">
+      </section>
+      <section class="flex-1">
+        <div class="flash-container">
+          <%= render_flash 'layouts/notifications/flash_messages' %>
+        </div>
+        <div class="flex justify-center items-center h-full">
+          <div class=" w-full max-w-xs m-4 p-4">
+            <%= yield %>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

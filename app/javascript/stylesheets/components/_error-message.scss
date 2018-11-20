@@ -1,0 +1,23 @@
+.error-message {
+  @apply border-l-4 p-2 mb-2 bg-red-lightest border-red text-red-dark flex flex-col items-start;
+
+  button.error-close {
+    @apply font-bold mb-4 ml-auto flex content-center items-center text-red-dark;
+
+    svg {
+      @apply w-5 h-5 fill-current flex-1;
+    }
+  }
+
+  h3 {
+    @apply font-bold mb-4;
+  }
+
+  ul {
+    @apply list-reset text-sm mb-4;
+  }
+
+
+
+
+}

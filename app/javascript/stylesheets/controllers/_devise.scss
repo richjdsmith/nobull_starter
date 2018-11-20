@@ -1,0 +1,41 @@
+body.devise_layout {
+
+  .flash-container {
+    @apply w-1/2;
+
+    @media screen and (max-width: 768px) {
+      @apply w-full;
+    }
+  }
+
+  #devise-side-image {
+    background-image: url(../images/winter_night.jpg);
+    background-size: cover;
+  }
+
+  &.registrations,
+  &.sessions,
+  &.confirmations,
+  &.passwords {
+
+    .shared-links {
+      @apply text-purple no-underline;
+
+      &:hover {
+        @apply text-purple-darker;
+      }
+    }
+
+    .devise-title {
+      @apply font-sans text-3xl font-semibold text-grey-darker mb-2 text-center;
+    }
+
+    .devise-subtitle {
+      @apply text-center text-grey-dark mb-4;
+    }
+
+  }
+
+
+
+}

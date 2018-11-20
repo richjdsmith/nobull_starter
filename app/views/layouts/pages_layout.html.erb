@@ -8,13 +8,18 @@
     <%= javascript_pack_tag 'hello_erb' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
-    <div class="flash-messages">
-      <div class="notice"><%= notice %></div>
-      <div class="alert"><%= alert %></div>
-    </div>
-    <%= yield %>
+  <body class="pages_layout <%= controller_name %> <%= action_name %>">
+    <header>
+      <%#= render 'layouts/navigation/pages_header' %>
+    </header>
+    <main class="">
+      <div class="flash-container">
+        <%= render_flash 'layouts/notifications/flash_messages' %>
+      </div>
+      <%= yield %>
+    </main>
   </body>
 </html>
