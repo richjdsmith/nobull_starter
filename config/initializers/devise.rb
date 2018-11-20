@@ -288,3 +288,14 @@ Devise.setup do |config|
   #   include Turbolinks::Controller
   # end
 end
+
+# This sets my custom devise_layout before the application starts.
+# it's executed once in production and before each request in development.
+# More info: https://github.com/plataformatec/devise/wiki/How-To%3a-Create-custom-layouts
+Rails.application.config.to_prepare do
+  Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise_layout" }
+  Devise::SessionsController.layout "devise_layout"
+  Devise::ConfirmationsController.layout "devise_layout"
+  Devise::UnlocksController.layout "devise_layout"            
+  Devise::PasswordsController.layout "devise_layout"    
+end

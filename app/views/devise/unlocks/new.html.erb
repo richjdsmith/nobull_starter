@@ -1,16 +1,13 @@
-<h2>Resend unlock instructions</h2>
-
+<h2 class="devise-title">Resend unlock instructions</h2>
+<p class="devise-subtitle">Or you can just try <%= link_to "Logging in.", new_session_path(resource_name), class: 'shared-links' %></p>
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
+  <%= render 'layouts/notifications/error_messages', object: resource %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label :email, class: 'label' %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'text-input' %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
+    <%= f.submit "Resend unlock instructions", class: 'w-full btn btn-purple' %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>

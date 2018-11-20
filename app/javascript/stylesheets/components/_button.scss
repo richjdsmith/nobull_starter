@@ -1,0 +1,23 @@
+.btn {
+  @apply py-2 px-3 font-bold rounded-sm shadow border bg-white border-grey-dark;
+
+  &:hover {
+    @apply bg-grey text-white shadow-md;
+  }
+
+  &:focus {
+    @apply border-2 border-grey-darker;
+  }
+}
+
+.btn-purple {
+  @apply bg-purple text-white border-transparent;
+
+  &:hover {
+    @apply bg-purple-dark shadow-md text-purple-lightest;
+  }
+
+  &:focus {
+    @apply border-2 border-purple-darker;
+  }
+}
