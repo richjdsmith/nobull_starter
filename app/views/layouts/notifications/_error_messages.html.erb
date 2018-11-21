@@ -1,4 +1,4 @@
-<% if object.errors.any? %>
+<% if resource.errors.any? %>
   <div class="error-message z-40 absoloute" data-controller="remover" data-target="remover.removable">
     <button class="error-close" data-action="remover#remove">
       <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -10,9 +10,9 @@
       </svg>
     </button>
 
-    <h3>Looks like there <%= object.errors.count > 1 ? "were" : "was" %> <%= "#{object.errors.count} #{"problem".pluralize(object.errors.count)}" %>:</h3>
+    <h3>Looks like there <%= resource.errors.count > 1 ? "were" : "was" %> <%= "#{resource.errors.count} #{"problem".pluralize(resource.errors.count)}" %>:</h3>
     <ul>
-      <% object.errors.full_messages.each do |msg| %>
+      <% resource.errors.full_messages.each do |msg| %>
         <li>‣ <%= msg %></li>
       <% end %>
     </ul>
