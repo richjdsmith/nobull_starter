@@ -1,26 +1,25 @@
-form {
-  .field {
-    @apply mb-4;
+.field {
+  @apply mb-4;
 
-    &.check-field {
-      @apply flex justify-center;
 
-      >* {
-        @apply mx-1;
-      }
-    }
-
-    .label {
-      @apply block text-grey-darker text-sm font-hairline mb-1;
-    }
-
-    .text-input {
-      @apply shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker;
-
-      &:focus {
-        @apply border border-grey-dark;
-      }
-    }
+  &.check-field {
+    @apply flex justify-center;
   }
 
+  &.check-field .label {
+    @apply mx-3;
+  }
+
+
+  .label {
+    @apply block text-grey-darker text-sm font-hairline mb-1;
+  }
+
+  .text-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker;
+  }
+
+  .text-input:focus {
+    @apply border border-grey-dark;
+  }
 }

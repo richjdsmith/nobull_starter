@@ -1,66 +1,69 @@
 .flash-container {
   @apply absolute z-20;
+}
 
-  .flash-message {
-    @apply border-l-4 p-4;
+.flash-message {
+  @apply border-l-4 p-4;
+}
 
-    .flash-icon {
-      @apply py-1 h-full;
+.flash-icon {
+  @apply py-1 h-full;
 
-      svg {
-        @apply fill-current h-6 w-6 mr-4;
-      }
-    }
-
-    button.flash-close {
-      @apply ml-auto font-bold flex content-center items-center;
-
-      svg {
-        @apply w-5 h-5 fill-current flex-1;
-      }
-    }
-
-    &.flash-notice {
-      @apply bg-blue-lightest border-blue text-blue-dark;
-
-      .flash-close {
-        @apply text-blue-dark;
-      }
-
-    }
-
-    &.flash-success {
-      @apply bg-green-lightest border-green text-green-dark;
-
-      .flash-close {
-        @apply text-green-dark;
-      }
-
-    }
-
-    &.flash-error {
-      @apply bg-red-lightest border-red text-red-dark;
-
-      .flash-close {
-        @apply text-red-dark;
-      }
-
-    }
-
-    &.flash-alert {
-      @apply bg-yellow-lightest border-yellow text-orange-dark;
-
-      .flash-close {
-        @apply text-orange-dark;
-      }
-    }
-
-    &.flash-warning {
-      @apply bg-orange-lightest border-orange text-orange-dark;
-
-      .flash-close {
-        @apply text-orange-dark;
-      }
-    }
+  .svg {
+    @apply fill-current h-6 w-6 mr-4;
   }
 }
+
+.flash-close {
+  @apply ml-auto font-bold flex content-center items-center;
+
+  .svg {
+    @apply w-5 h-5 fill-current flex-1;
+  }
+}
+
+
+/* purgecss start ignore */
+.flash-notice {
+  @apply bg-blue-lightest border-blue text-blue-dark;
+
+  .flash-close {
+    @apply text-blue-dark;
+  }
+}
+
+.flash-success {
+  @apply bg-green-lightest border-green text-green-dark;
+
+  .flash-close {
+    @apply text-green-dark;
+  }
+}
+
+.flash-error {
+  @apply bg-red-lightest border-red text-red-dark;
+
+  .flash-close {
+    @apply text-red-dark;
+  }
+}
+
+/* purgecss ignore */
+.flash-alert {
+  @apply bg-yellow-lightest border-yellow text-orange-dark;
+
+  /* purgecss ignore */
+  .flash-close {
+    @apply text-orange-dark;
+  }
+}
+
+.flash-warning {
+  @apply bg-orange-lightest border-orange text-orange-dark;
+
+  .flash-close {
+    @apply text-orange-dark;
+  }
+}
+
+/* purgecss end ignore */
