@@ -10,7 +10,6 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     email: Field::String,
-    name: Field::String,
     admin: Field::Boolean,
     encrypted_password: Field::String,
     reset_password_token: Field::String,
@@ -23,6 +22,8 @@ class UserDashboard < Administrate::BaseDashboard
     last_sign_in_ip: Field::String.with_options(searchable: false),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    first_name: Field::String,
+    last_name: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -33,8 +34,10 @@ class UserDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :email,
-    :name,
+    :first_name,
+    :last_name,
     :admin,
+    :last_sign_in_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -42,18 +45,19 @@ class UserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :email,
-    :name,
     :admin,
+    :first_name,
+    :last_name,
+    :last_sign_in_at,
+    :sign_in_count,
+    :created_at,
     :encrypted_password,
     :reset_password_token,
     :reset_password_sent_at,
     :remember_created_at,
-    :sign_in_count,
     :current_sign_in_at,
-    :last_sign_in_at,
     :current_sign_in_ip,
     :last_sign_in_ip,
-    :created_at,
     :updated_at,
   ].freeze
 
@@ -62,17 +66,18 @@ class UserDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :email,
-    :name,
     :admin,
-    :encrypted_password,
-    :reset_password_token,
-    :reset_password_sent_at,
-    :remember_created_at,
-    :sign_in_count,
-    :current_sign_in_at,
-    :last_sign_in_at,
-    :current_sign_in_ip,
-    :last_sign_in_ip,
+    :first_name,
+    :last_name,
+    # :encrypted_password,
+    # :reset_password_token,
+    # :reset_password_sent_at,
+    # :remember_created_at,
+    # :sign_in_count,
+    # :current_sign_in_at,
+    # :last_sign_in_at,
+    # :current_sign_in_ip,
+    # :last_sign_in_ip,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
