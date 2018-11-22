@@ -13,12 +13,9 @@
 
   <body class="application_layout <%= controller_name %> <%= action_name %>">
     <header>
-      <%#= render 'layouts/navigation/application_header' %>
+      <%= render 'layouts/header/application_header' %>
     </header>
-    <main class="">
-      <% resource.present? %>
-        <%= render 'layouts/notifications/error_messages', object: resource || nil %>  
-      <% end %>
+    <main>
       <div class="flash-container">
         <%= render_flash 'layouts/notifications/flash_messages' %>
       </div>

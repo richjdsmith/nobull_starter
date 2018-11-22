@@ -13,13 +13,16 @@
 
   <body class="pages_layout <%= controller_name %> <%= action_name %>">
     <header>
-      <%#= render 'layouts/navigation/pages_header' %>
+      <%= render 'layouts/header/pages_header' %>
     </header>
-    <main class="">
+    <main class="w-full">
       <div class="flash-container">
         <%= render_flash 'layouts/notifications/flash_messages' %>
       </div>
       <%= yield %>
     </main>
+    <footer>
+      <%= render 'layouts/footer/pages_footer' %>
+    </footer>
   </body>
 </html>
