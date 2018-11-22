@@ -46,6 +46,9 @@ gem 'local_time'
 # An easier way to handle names. - Read more: https://github.com/basecamp/name_of_person
 gem 'name_of_person'
 
+# Inline adds inline svg reading helper - Read more: https://github.com/jamesmartin/inline_svg
+#gem 'inline_svg'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
