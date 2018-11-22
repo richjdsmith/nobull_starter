@@ -23,7 +23,6 @@ environment.plugins.append('PurgecssPlugin', new PurgecssPlugin({
   paths: glob.sync([
     path.join(__dirname, '../../app/javascript/**/*.js'),
     path.join(__dirname, '../../app/views/**/**/*.erb'),
-    path.join(__dirname, '../../app/views/layouts/navigation/*.erb'),
   ]),
   extractors: [ // if using Tailwind
     {
