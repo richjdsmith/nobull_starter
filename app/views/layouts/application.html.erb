@@ -11,15 +11,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body class="application_layout <%= controller_name %> <%= action_name %>">
+  <body class="application_layout <%= controller_name %> <%= action_name %> h-screen">
     <header>
       <%= render 'layouts/header/application_header' %>
     </header>
-    <main>
+    <main class=" flex">
       <div class="flash-container">
         <%= render_flash 'layouts/notifications/flash_messages' %>
       </div>
       <%= yield %>
     </main>
+    <footer class="absolute pin-b">
+      <%= render 'layouts/footer/application_footer' %>
+    </footer>
   </body>
 </html>
