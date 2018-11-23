@@ -86,5 +86,5 @@ test:
 production:
   <<: *default
   database: thegoodvine_app_production
-  username: thegoodvine_app
+  username: richsmith
   password: <%= ENV['THEGOODVINE_APP_DATABASE_PASSWORD'] %>
