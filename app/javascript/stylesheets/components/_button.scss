@@ -1,23 +1,36 @@
 .btn {
-  @apply py-2 px-3 font-bold rounded-sm shadow border bg-white border-grey-dark;
+  @apply py-2 px-3 font-bold no-underline rounded-sm shadow;
 
   &:hover {
-    @apply bg-grey text-white shadow-md;
+    @apply shadow-md;
   }
+
 
   &:focus {
     @apply border-2 border-grey-darker;
   }
+
+  &.btn-purple {
+    @apply bg-purple text-white border-transparent;
+
+    &:hover {
+      @apply bg-purple-dark shadow-md text-purple-lightest;
+    }
+
+    &:focus {
+      @apply border-2 border-purple-darker;
+    }
+  }
 }
 
-.btn-purple {
-  @apply bg-purple text-white border-transparent;
+.btn-outline {
+  @apply px-4 py-2 border rounded no-underline font-bold;
 
   &:hover {
-    @apply bg-purple-dark shadow-md text-purple-lightest;
+    @apply shadow-md;
   }
 
-  &:focus {
-    @apply border-2 border-purple-darker;
+  &.btn-purple {
+    @apply border-purple-light text-purple-dark;
   }
 }
