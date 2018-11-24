@@ -1,5 +1,5 @@
 {
-  "name": "thegoodvine_app",
+  "name": "nobull_starter",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
