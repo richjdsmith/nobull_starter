@@ -1,1 +1,4 @@
-<div class="h-full"></div>
+<%# if current_user.locations.blank? %>
+<% if true %>
+  <%= render 'empty_state' %>
+<% end %>
