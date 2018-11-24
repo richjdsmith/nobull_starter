@@ -19,10 +19,10 @@ body.devise_layout {
   &.passwords {
 
     .shared-links {
-      @apply text-purple no-underline;
+      @apply text-indigo no-underline;
 
       &:hover {
-        @apply text-purple-darker;
+        @apply text-indigo-darker;
       }
     }
 

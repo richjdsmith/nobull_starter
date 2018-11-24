@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'text-white  no-underline font-sans ml-2 px-4 py-2 border rounded border-purple-light  hover:text-purple hover:bg-white hover:border-white '  %>        
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'text-white  no-underline font-sans ml-2 px-4 py-2 border rounded border-indigo-light  hover:text-indigo hover:bg-white hover:border-white '  %>        
 <% else %>
-  <%= link_to 'Login', new_user_session_path, class: 'text-white  no-underline font-sans ml-2 px-4 py-2 border rounded border-purple-light hover:text-purple hover:bg-white hover:border-white '   %>  
+  <%= link_to 'Login', new_user_session_path, class: 'text-white  no-underline font-sans ml-2 px-4 py-2 border rounded border-indigo-light hover:text-indigo hover:bg-white hover:border-white '   %>  
 <% end %>

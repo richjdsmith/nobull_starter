@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'text-purple-dark font-bold  no-underline font-sans ml-2 px-4 py-2 border rounded border-purple-light lg:my-0 md:my-2 '  %>        
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'text-indigo-dark font-bold  no-underline font-sans ml-2 px-4 py-2 border rounded border-indigo-light lg:my-0 md:my-2 '  %>        
 <% else %>
-  <%= link_to 'Login', new_user_session_path, class: 'text-purple-dark font-bold  no-underline font-sans ml-2 px-4 py-2 border rounded border-purple-light lg:my-0 md:my-2'   %>  
+  <%= link_to 'Login', new_user_session_path, class: 'text-indigo-dark font-bold  no-underline font-sans ml-2 px-4 py-2 border rounded border-indigo-light lg:my-0 md:my-2'   %>  
 <% end %>

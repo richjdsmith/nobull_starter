@@ -10,15 +10,15 @@
     @apply border-2 border-grey-darker;
   }
 
-  &.btn-purple {
-    @apply bg-purple text-white border-transparent;
+  &.btn-indigo {
+    @apply bg-indigo text-white border-transparent;
 
     &:hover {
-      @apply bg-purple-dark shadow-md text-purple-lightest;
+      @apply bg-indigo-dark shadow-md text-indigo-lightest;
     }
 
     &:focus {
-      @apply border-2 border-purple-darker;
+      @apply border-2 border-indigo-darker;
     }
   }
 }
@@ -30,7 +30,7 @@
     @apply shadow-md;
   }
 
-  &.btn-purple {
-    @apply border-purple-light text-purple-dark;
+  &.btn-indigo {
+    @apply border-indigo-light text-indigo-dark;
   }
 }
